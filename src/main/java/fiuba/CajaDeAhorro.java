@@ -11,6 +11,11 @@ public class CajaDeAhorro {
         this.saldo = saldoInicial;
         this.cbu = cbu;
     }
+    
+    public CajaDeAhorro(String cbu) {
+    		this.cbu = cbu;
+    		this.saldo = 0;
+    }
 
     public void debitar(int montoADebitar) {
         if (montoADebitar > this.saldo) {

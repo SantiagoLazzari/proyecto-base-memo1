@@ -16,10 +16,17 @@ public class FachadaBanco {
         this.cuentas = new ArrayList<CajaDeAhorro>();
     }
 
-    public void crearCuenta(String cbu, int saldoInicial) {
+    public void crearCuenta(String cbu, int saldoInicial){
         cuentas.add(new CajaDeAhorro(cbu, saldoInicial));
     }
-
+    
+    public void crearCuenta(String cbu) {
+    		cuentas.add(new CajaDeAhorro(cbu));
+    }
+    
+    public int cantidadDeCuentas(String cbu) {
+    		return 0;
+    }
 
     public boolean debitar(String cbu, int montoADebitar) {
         CajaDeAhorro cuentaBuscada = null;

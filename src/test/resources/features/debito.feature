@@ -10,3 +10,5 @@ Característica: Debito de fondos
     Dado que mi caja de ahorro tiene un saldo de "10" pesos
     Cuando cuando debito "20" pesos
     Entonces la operacion es rechazada y el saldo final es "10" pesos
+    
+   
