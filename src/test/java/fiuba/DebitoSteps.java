@@ -39,5 +39,4 @@ public class DebitoSteps {
         assertFalse(resultadoExitoso);
         assertEquals(saldoFinal, fachadaBanco.consultarSaldo(CBU));
     }
-
 }

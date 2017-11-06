@@ -24,7 +24,7 @@ public class CrearCuentaSteps {
         saldoLuegoDeCrearCuenta = fachadaBanco.consultarSaldo(cbu);
     }
 
-    @Entonces("^el saldo final de es de \"(.*?)\" es \"(.*?)\" pesos$")
+    @Entonces("^el saldo final de \"(.*?)\" es de \"(.*?)\" pesos$")
     public void el_saldo_final_es_de_pesos(String cbu, int saldoFinal) throws Throwable {
         assertEquals(saldoFinal, fachadaBanco.consultarSaldo(cbu));
     }
